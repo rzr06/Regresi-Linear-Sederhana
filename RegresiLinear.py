@@ -30,20 +30,26 @@ a = Y_mean - b * X_mean
 X = df['Waktu Tidur (Jam)']
 Y_pred = a + b * X
 
+# Menghitung error (epsilon)
+epsilon = df['IPS'] - Y_pred
+
 # Menghitung MSE dan R-Squared
 mse = mean_squared_error(df['IPS'], Y_pred)
 r2 = r2_score(df['IPS'], Y_pred)
 
+# Menampilkan hasil
 print("Koefisien regresi (b):", b)
 print("Intercept (a):", a)
 print("Mean Squared Error (MSE):", mse)
 print("R-Squared (R²):", r2)
+print("\nError (epsilon) per data:")
+print(epsilon)
 
 # Visualisasi hasil regresi
 plt.scatter(X, df['IPS'], color='blue', label='Data Aktual')
-plt.plot(X, Y_pred, color='red', label='Regresi Manual')
+plt.plot(X, Y_pred, color='red', label='Regresi Linear')
 plt.xlabel('Waktu Tidur (Jam)')
 plt.ylabel('IPS')
-plt.title('Hubungan Waktu Tidur dengan IPS (Regresi Manual)')
+plt.title('Hubungan Waktu Tidur dengan IPS (Regresi Linear)')
 plt.legend()
 plt.show()
