@@ -1,4 +1,4 @@
-## Analisis Regresi Linear
+# Analisis Regresi Linear
 
 Kode ini melakukan analisis regresi linear sederhana secara manual dan menguji signifikansi model dengan langkah-langkah berikut:
 
