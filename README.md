@@ -1,57 +1,60 @@
-# Analisis Regresi Linear
+# Linear Regression Analysis
 
-Kode ini melakukan analisis regresi linear sederhana secara manual dan menguji signifikansi model dengan langkah-langkah berikut:
+This code performs simple linear regression analysis manually and tests the significance of the model with the following steps:
 
-### 1. Persiapan Data
-- Membaca dataset yang terdiri dari 30 observasi
-- Variabel independen (X) dan dependen (Y) disimpan dalam DataFrame
-- Menghitung mean dari X dan Y
+### 1. Data Preparation
+- Read the dataset consisting of 30 or more observations
+- Independent (X) and dependent (Y) variables are stored in DataFrame
+- Calculating the mean of X and Y
 
-### 2. Perhitungan Koefisien Regresi
-**Persamaan Regresi**: Ŷ = a + bX
-- Menghitung slope (b) menggunakan rumus:
-  ```math
+### Regression Coefficient Calculation
+**Regression Equation**: Ŷ = a + bX
+- Calculate the slope (b) using the formula:
+  
+  ``math
+  
   b = Σ[(X_i - X̄)(Y_i - Ȳ)] / Σ(X_i - X̄)²
   
-Menghitung intercept (a) menggunakan:
-a = Ȳ - bX̄
+- Calculate the intercept (a) using:
 
-### 3. Evaluasi Model
-  a. Mean Squared Error (MSE): Mengukur rata-rata kuadrat error
-  
-  b. R-squared (R²): Mengukur proporsi variansi yang dijelaskan model
-  
-  c. F-statistik: Menguji signifikansi model secara keseluruhan ( F = (R²/k) / [(1-R²)/(n-k-1)] ) dimana k = jumlah variabel independen
+  a = Ȳ - bX̄
 
-### 4. Uji Signifikansi
-  a. Menghitung p-value menggunakan distribusi F
+### Model Evaluation
+  a. Mean Squared Error (MSE): Measures the average squared error
   
-  b. Membandingkan p-value dengan α = 0.05
+  b. R-squared (R²): Measures the proportion of variance explained by the model
   
-  c. Menarik kesimpulan signifikansi hubungan linier
+  c. F-statistic: Tests the significance of the model as a whole F = (R²/k) / [(1-R²)/(n-k-1)] where k = the number of independent variables.
 
-### 5. Visualisasi
-  a. Menampilkan scatter plot data aktual
+### Significance Test
+  a. Calculate the p-value using the F distribution
   
-  b. Menampilkan garis regresi linear
+  b. Comparing the p-value with α = 0.05
   
-  c. Menyajikan error (ε) untuk tiap observasi
+  c. Drawing conclusions on the significance of the linear relationship
 
-Output Utama
-  1. Parameter model (a dan b)
+### Visualization
+  a. Displaying scatter plot of actual data
+  
+  b. Displaying the linear regression line
+  
+  c. Presents the error (ε) for each observation
+
+Main Output
+  1. Model parameters (a and b)
      
-  2. Metrik evaluasi (MSE dan R²)
+  2. Evaluation metrics (MSE and R²)
      
-  3. Hasil uji statistik (F-statistic dan p-value)
+  3. Statistical test results (F-statistic and p-value) 3.
      
-  4. Visualisasi hubungan X-Y
+  4. Visualization of X-Y relationship
      
-  5. Daftar error untuk tiap data point
+  5. List of errors for each data point
 
-Penggunaan
+Usage of
 
-Kode ini dapat digunakan untuk:
-  1. Memahami implementasi manual regresi linear
-  2. Menganalisis hubungan antara dua variabel numerik
-  3. Melakukan uji signifikansi model regresi
-  5. Memvisualisasikan hasil regresi linear
+This code can be used for:
+  1. Understand the manual implementation of linear regression
+  2. Analyzing the relationship between two numerical variables
+  3. Perform significance test of regression model
+  5. Visualizing linear regression results
