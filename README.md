@@ -16,19 +16,19 @@ Kode ini melakukan analisis regresi linear sederhana secara manual dan menguji s
 Menghitung intercept (a) menggunakan:
 a = Ȳ - bX̄
 
-3. Evaluasi Model
+### 3. Evaluasi Model
   a. Mean Squared Error (MSE): Mengukur rata-rata kuadrat error
   b. R-squared (R²): Mengukur proporsi variansi yang dijelaskan model
   c.F-statistik: Menguji signifikansi model secara keseluruhan
-              F = (R²/k) / [(1-R²)/(n-k-1)]
+  F = (R²/k) / [(1-R²)/(n-k-1)]
   dimana k = jumlah variabel independen
 
-4. Uji Signifikansi
+### 4. Uji Signifikansi
   a. Menghitung p-value menggunakan distribusi F
   b. Membandingkan p-value dengan α = 0.05
   c. Menarik kesimpulan signifikansi hubungan linier
 
-5. Visualisasi
+### 5. Visualisasi
   a. Menampilkan scatter plot data aktual
   b. Menampilkan garis regresi linear
   c. Menyajikan error (ε) untuk tiap observasi
